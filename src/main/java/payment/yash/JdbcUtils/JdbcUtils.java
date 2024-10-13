@@ -1,4 +1,4 @@
-package com.yash.JdbcUtils;
+package payment.yash.JdbcUtils;
 
 
 import java.sql.*;

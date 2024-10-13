@@ -1,4 +1,4 @@
-package com.yash.pojo;
+package payment.yash.pojo;
 
 public class Payment_details {
 	private String name;

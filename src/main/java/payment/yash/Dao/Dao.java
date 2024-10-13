@@ -1,6 +1,6 @@
-package com.yash.Dao;
+package payment.yash.Dao;
 
-import com.yash.pojo.Payment_details;
+import payment.yash.pojo.Payment_details;
 
 public interface Dao {
 	public boolean addPayment(Payment_details pd);

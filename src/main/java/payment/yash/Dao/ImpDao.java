@@ -1,10 +1,10 @@
-package com.yash.Dao;
+package payment.yash.Dao;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import com.yash.JdbcUtils.JdbcUtils;
-import com.yash.pojo.Payment_details;
+import payment.yash.JdbcUtils.JdbcUtils;
+import payment.yash.pojo.Payment_details;
 
 public class ImpDao implements Dao {
 	JdbcUtils db; 

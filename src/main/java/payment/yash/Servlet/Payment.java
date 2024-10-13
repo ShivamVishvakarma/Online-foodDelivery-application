@@ -1,13 +1,13 @@
-package com.yash.Servlet;
+package payment.yash.Servlet;
 
 import java.io.IOException;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-import com.yash.Dao.Dao;
-import com.yash.Dao.ImpDao;
-import com.yash.pojo.Payment_details;
+import payment.yash.Dao.Dao;
+import payment.yash.Dao.ImpDao;
+import payment.yash.pojo.Payment_details;
 
 @WebServlet("/payment")
 
