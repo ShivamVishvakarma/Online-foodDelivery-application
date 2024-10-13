@@ -30,6 +30,7 @@ public class ImpDao implements Dao {
 			pst.setString(2,pd.getMode());
 			pst.setDouble(3,pd.getAmount());
 			pst.execute();
+			return true;
 			
 			
 		}

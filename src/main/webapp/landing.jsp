@@ -7,7 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Payment added sucessfully</h1>
+<center>
+<h1 style="color:green">Payment added sucessfully</h1>
+</center>
 
 </body>
 </html>
