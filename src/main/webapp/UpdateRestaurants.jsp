@@ -15,7 +15,7 @@
         Cuisine Type: <input type="text" name="cuisineType" value="${restaurant.cuisineType}" required><br>
         Address: <input type="text" name="address" value="${restaurant.address}" required><br>
         Contact Information: <input type="number" name="contactInformation" value="${restaurant.contactInformation}" required><br>
-        Opening Hours: <input type="time" name="openingHours" value="${restaurant.openingHours}" required><br>
+        Opening Hours: <input type="text" name="openingHours" value="${restaurant.openingHours}" required><br>
         Reviews: <textarea name="reviews">${restaurant.reviews}</textarea><br>
         Orders: <input type="number" name="orders" value="${restaurant.orders}"><br>
         Rating: <input type="number" name="numRating" step="0.1" min="0" max="5" value="${restaurant.numRating}"><br>

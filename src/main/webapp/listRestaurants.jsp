@@ -23,8 +23,8 @@
                 <td>${restaurant.cuisineType}</td>
                 <td>${restaurant.address}</td>
                 <td>
-                    <a href="readRestaurant?id=${restaurant.id}">View</a>
-                    <a href="editRestaurant?id=${restaurant.id}">Edit</a>
+                    <a href="/readRestaurants?id=${restaurant.id}">View</a>
+                    <a href="/UpdateRestaurants?id=${restaurant.id}">Edit</a>
                     <form action="deleteRestaurant" method="post" style="display:inline;">
                         <input type="hidden" name="id" value="${restaurant.id}">
                         <input type="submit" value="Delete">

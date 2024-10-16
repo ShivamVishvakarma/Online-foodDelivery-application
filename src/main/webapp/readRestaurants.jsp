@@ -22,7 +22,7 @@
     <p>Open: ${restaurant.open ? 'Yes' : 'No'}</p>
     <p>Foods: ${restaurant.foods}</p>
     
-    <a href="editRestaurant?id=${restaurant.id}">Edit</a>
+    <a href="UpdateRestaurants?id=${restaurant.id}">Edit</a>
     <form action="deleteRestaurants" method="post" style="display:inline;">
         <input type="hidden" name="id" value="${restaurant.id}">
         <input type="submit" value="Delete">

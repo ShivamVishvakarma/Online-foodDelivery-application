@@ -14,7 +14,7 @@
         Cuisine Type: <input type="text" name="cuisineType" required><br>
         Address: <input type="text" name="address" required><br>
         Contact Information: <input type="number" name="contactInformation" required><br>
-        Opening Hours: <input type="time" name="openingHours" required><br>
+        Opening Hours: <input type="text" name="openingHours" required><br>
         Reviews: <textarea name="reviews"></textarea><br>
         Orders: <input type="number" name="orders" value="0"><br>
         Rating: <input type="number" name="numRating" step="0.1" min="0" max="5" value="0"><br>
