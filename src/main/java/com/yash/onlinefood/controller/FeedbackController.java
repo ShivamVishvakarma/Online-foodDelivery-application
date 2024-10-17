@@ -9,13 +9,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.yash.onlinefood.pojo.Feedback;
-import com.yash.onlinefood.repository.FeedbackRepository;
-import com.yash.onlinefood.respositoryImpl.FeedbackRepositoryImpl;
+import com.yash.onlinefood.dao.FeedbackDao;
+import com.yash.onlinefood.daoimpl.FeedbackDaoImpl;
+import com.yash.onlinefood.domain.Feedback;
+
+
 
 @WebServlet("/feedback")
 public class FeedbackController extends HttpServlet {
-    private FeedbackRepository feedbackDao = new FeedbackRepositoryImpl();
+    private FeedbackDao feedbackDao = new FeedbackDaoImpl();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
