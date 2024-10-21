@@ -12,10 +12,13 @@
 <body>
 
 
+<div style="text-align:center">
+
 	<input type="text" id="amount" placeholder="Enter amount">
 	</br>
 	<button id="payButton" class="btnstyle" onClick="CreateOrderId()">PayNow</button>
 
+</div>
 
 </body>
 </html>

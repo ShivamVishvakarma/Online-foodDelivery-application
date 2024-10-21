@@ -14,7 +14,8 @@ import org.json.*;
 import com.razorpay.*;
 
 @WebServlet("/OrderCreation")
-public class PaymentController extends HttpServlet {
+public class PaymentController extends HttpServlet 
+{
     private static final long serialVersionUID = 1L;
 
     public PaymentController() {
@@ -23,15 +24,9 @@ public class PaymentController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        String param =request.getParameter("amount");
        int amount=Integer.parseInt(param);
-       
     	String orderId = createOrderId(amount);
-//        request.setAttribute("orderId", orderId);
-//        RequestDispatcher rd=request.getRequestDispatcher("PaymentScript.js");
-//        rd.forward(request ,response);
-      
-           response.getWriter().append(orderId);
+        response.getWriter().append(orderId);
     }
-
     
     //method to create order ID
     private String createOrderId(int amount) {
@@ -41,7 +36,7 @@ public class PaymentController extends HttpServlet {
         try {
             client = new RazorpayClient("rzp_test_sTqCcxyqEhqktK", "N9p0R1yxZPHZipVeOhokDHR0");
             JSONObject options = new JSONObject();
-            options.put("amount", amount*100); // Amount in paise
+            options.put("amount", amount*100); 
             options.put("currency", "INR");
             options.put("receipt", "redwsq");
             options.put("payment_capture", true);
