@@ -61,6 +61,8 @@ const OpenCheckout = () => {
 
 
 const sendPaymentDetails = (paymentId, orderId) => {
+	
+	/*For sending payment id and order id to servlet*/
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", "http://localhost:8080/FoodDelivery/BillerCounter", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
